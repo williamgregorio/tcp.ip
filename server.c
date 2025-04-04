@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <sys/socket.h>
 
 // ip addressing and routing packets to destination
 // int socks endpoint hand
@@ -11,6 +12,6 @@ int main() {
   printf("PORT: %d\n", PORT);
 
   char buffer[BUFFER_SIZE] = {0};
-  int new_socket;
+  int new_socket, server_file_descriptor;
   return 0;
 }
